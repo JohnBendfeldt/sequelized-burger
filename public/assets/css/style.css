@@ -47,6 +47,11 @@ li {
   padding-top: 20px;
   font-size: 25px;
   box-shadow: inset 0px 0px 20px -5px #FFDDBB;
+  text-shadow:
+			-1px -1px 0 #000,  
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 #bunBottom {
@@ -56,7 +61,7 @@ li {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 3px;
-  box-shadow: 5px 5px 10px black, inset 0px 0px 20px -5px #FFDDBB;
+  box-shadow: 5px 5px 20px black, inset 0px 0px 20px -5px #FFDDBB;
 }
 
 #patty {
@@ -122,6 +127,15 @@ li {
   cursor: pointer;
 }
 
-#order:hover, #delete:hover, #ca:hover, #eat:hover {
+#ca:hover, #eat:hover {
   box-shadow: 2px 2px 5px black;
+}
+
+#order:hover, #delete:hover {
+  box-shadow: 2px 2px 5px black;
+  text-shadow:
+			-1px -1px 0 #000,  
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+      1px 1px 0 #000;
 }
