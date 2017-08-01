@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Artifika');
+
+h1 {
+  text-align: center;
+  text-shadow:
+			-1px -1px 0 #FFFFFF,  
+			1px -1px 0 #FFFFFF,
+			-1px 1px 0 #FFFFFF,
+      1px 1px 0 #FFFFFF;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+#container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0px auto;
+  font-family: 'Artifika', serif;
+  background-color: #DFDFDF;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+ul {
+  padding: 0px !important;
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+  margin: 15px 0px !important;
+  border-radius: 20px;
+  width: 95%;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+#bunTop {
+  width: 102%;
+  height: 40px;
+  background-color:goldenrod;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+#bunBottom {
+  width: 102%;
+  height: 25px;
+  background-color:goldenrod;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 3px;
+  box-shadow: 5px 5px 20px black;
+}
+
+#patty {
+  width: 102%;
+  background-color: brown;
+  border-radius: 10px;
+  height: 35px;
+  margin: 2px 0px;
+}
+
+#eaten {
+  opacity: .7;
+}
+
+#eaten:hover {
+  opacity: 1;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#delete {
+  background-color: red;
+  border-radius: 10px;
+  width: 102%;
+  color: whitesmoke !important;
+  border: none !important;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+#order {
+  background-color: green;
+  border-radius: 10px;
+  width: 102%;
+  color: whitesmoke !important;
+  border: none !important;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+#eat {
+  background-color: orange;
+  width: 100%;
+  font-weight: 900;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#ca:hover, #eat:hover {
+  box-shadow: 2px 2px 5px black;
+}

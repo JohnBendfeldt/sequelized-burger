@@ -1,0 +1,70 @@
+<div id="container">
+<h1>John's Burger Bar</h1>
+
+<h2>Your current orders:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless this.devoured}}
+      <li>
+        <div id="bunTop">
+        {{this.burger_name}}
+        </div>
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button id="order" type="submit">Eat up!</button>
+        </form>
+
+        {{> burgers/delete-burger}}
+        <div id="patty"></div>
+        <div id="bunBottom"></div>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+<br>
+
+<h2>Burgers you have eaten:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if this.devoured}}
+      <li id="eaten">
+        <div id="bunTop">
+          {{this.burger_name}}
+        </div>
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="false">
+          <button id="order" type="submit">Order Again!</button>
+        </form>
+
+        {{> burgers/delete-burger}}
+        <div id="patty"></div>
+        <div id="bunBottom"></div>
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+<br>
+
+<h2>Order your burgers here!</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name" required style="border-radius:10px; width:99%;" placeholder="Create any burger you like, or describe a burger you've eaten.">
+  </div>
+
+  <div class="form-group">
+    <label for="eaten">Ordered or Eaten?</label><br>
+    <label for="burgers_eaten">
+      <input id="burgers_eaten" type="radio" name="devoured" value="1"> Eaten!<br>
+    </label>
+    <label for="burgers_ordered">
+      <input id="burgers_ordered" type="radio" name="devoured" value="0" checked> Place Order
+    </label>
+  </div>
+
+  <button id="eat" type="submit">Place Order/ Eat the Burger</button>
+</form>
+</div>
