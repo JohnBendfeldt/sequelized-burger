@@ -2,17 +2,17 @@
 
 This app uses a MySQL database to keep track of the burger that are ordered and eaten.
 
-This is a simple full stack application that utilizes Node.js, Express.js, MySQL and Handlebars.
+This is a simple full stack application that utilizes Node.js, Express.js, MySQL, Sequelized and Handlebars.
 
 ## Demo
 
-Try the app for yourself on the [Heroku Platform](http://johnsburgers.herokuapp.com/).
+Try the app for yourself on the [Heroku Platform](http://johnsburgersequel.herokuapp.com/).
 
 ## Installation
 
 To run this app locally navigate to the directory you want and clone the repository:
 
-	git clone git@github.com:JohnBendfeldt/burger.git
+	git clone git@github.com:JohnBendfeldt/sequelized-burger.git
 	
 Next, install the app dependencies:
 
