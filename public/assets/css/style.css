@@ -46,6 +46,7 @@ li {
   font-weight: 900;
   padding-top: 5px;
   font-size: 25px;
+  box-shadow: 5px 5px 10px slategray;
 }
 
 #bunBottom {
@@ -55,7 +56,7 @@ li {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 3px;
-  box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 10px slategray;
 }
 
 #patty {
@@ -64,6 +65,7 @@ li {
   border-radius: 10px;
   height: 35px;
   margin: 2px 0px;
+  box-shadow: 5px 5px 10px slategray;
 }
 
 #eaten {
@@ -97,6 +99,7 @@ li {
   border: none !important;
   cursor: pointer;
   font-weight: 900;
+  box-shadow: 5px 5px 10px slategray;
 }
 
 #order {
@@ -107,6 +110,7 @@ li {
   border: none !important;
   cursor: pointer;
   font-weight: 900;
+  box-shadow: 5px 5px 10px slategray;
 }
 
 #eat {
@@ -117,6 +121,6 @@ li {
   cursor: pointer;
 }
 
-#ca:hover, #eat:hover {
+#order:hover, #delete:hover, #ca:hover, #eat:hover {
   box-shadow: 2px 2px 5px black;
 }
