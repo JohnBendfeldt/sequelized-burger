@@ -8,7 +8,9 @@ db.sequelize.sync();
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  db.Burger.findAll({}).then(function(results) { 
+  db.Burger.findAll({
+    order: [['burger_name', 'ASC']]
+  }).then(function(results) { 
     var hbsObject = {
         burgers: results
       };
