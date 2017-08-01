@@ -1,4 +1,4 @@
-# Eat the Burger
+# Eat the Burger Sequel
 
 This app uses a MySQL database to keep track of the burger that are ordered and eaten.
 
@@ -16,7 +16,7 @@ To run this app locally navigate to the directory you want and clone the reposit
 	
 Next, install the app dependencies:
 
-	cd burger
+	cd sequelized-burger
 	npm install
 	
 Now you can run the server:
