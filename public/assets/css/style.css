@@ -37,35 +37,36 @@ li {
 
 #bunTop {
   width: 102%;
-  height: 40px;
-  background-color:goldenrod;
-  border-top-left-radius: 36px;
-  border-top-right-radius: 36px;
+  height: 50px;
+  background-color: #DA8751;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   color: whitesmoke;
   text-align: center;
   font-weight: 900;
-  padding-top: 5px;
+  padding-top: 20px;
   font-size: 25px;
-  box-shadow: 5px 5px 10px slategray;
+  box-shadow: inset 0px 0px 20px -5px #FFDDBB;
 }
 
 #bunBottom {
   width: 102%;
   height: 25px;
-  background-color:goldenrod;
+  background-color:#DA8751;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 3px;
-  box-shadow: 5px 5px 10px slategray;
+  box-shadow: 5px 5px 10px black, inset 0px 0px 20px -5px #FFDDBB;
 }
 
 #patty {
   width: 102%;
-  background-color: brown;
+  background-color: #561200;
   border-radius: 10px;
   height: 35px;
   margin: 2px 0px;
-  box-shadow: 5px 5px 10px slategray;
+  box-shadow: inset 0px 7px 20px -5px #B0775D;
+  z-index: 20;
 }
 
 #eaten {
@@ -99,18 +100,18 @@ li {
   border: none !important;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 5px 5px 10px slategray;
+  z-index: -1;
 }
 
 #order {
-  background-color: green;
+  background-color: #68A61F;
   border-radius: 10px;
   width: 102%;
   color: whitesmoke !important;
   border: none !important;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 5px 5px 10px slategray;
+  z-index: -1;
 }
 
 #eat {
